@@ -16,7 +16,7 @@ The backend services are completely isolated within a **Docker Container Environ
 * **SQLite Database:** Acts as the local relational storage to persist every application and AI decision.
 * **Power BI Dashboard:** Connects to the database to visualize live portfolio risk metrics and approval rates.
 
-*(Insert your architecture diagram image here)*
+<img width="2528" height="1684" alt="Architecture_FinRisk360" src="https://github.com/user-attachments/assets/98801f92-55b5-42e0-8760-b4aa3828855f" />
 
 ## 🛠️ Tech Stack
 * **Machine Learning & AI:** Python, Pandas, Scikit-Learn (Random Forest Classifier)
