@@ -67,6 +67,29 @@
             font-weight: bold;
             display: none;
         }
+        .portfolio-footer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1000;
+        }
+        .portfolio-footer-hr {
+            border: 0;
+            border-top: 1px solid #4a5568;
+            margin: 0 0 10px auto;
+            width: 300px;
+        }
+        .portfolio-footer-text {
+            color: #a0aec0;
+            font-size: 14px;
+            margin: 0;
+        }
+        .portfolio-footer-text strong {
+            color: #e2e8f0;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -151,5 +174,9 @@
             }
         });
     </script>
+    <div class="portfolio-footer">
+        <hr class="portfolio-footer-hr">
+        <p class="portfolio-footer-text">Developed by <strong>Arihant</strong> | FinRisk360 AI Pipeline</p>
+    </div>
 </body>
 </html>
