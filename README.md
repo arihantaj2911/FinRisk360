@@ -1,42 +1,46 @@
-# FinRisk360: End-to-End Real-Time Credit Risk Engine
+# 🚀 FinRisk360 AI Pipeline
 
-FinRisk360 is a full-stack AI solution that automates credit risk assessment. It features a live data pipeline where user inputs from a web interface are processed by a Machine Learning model in Docker, stored in a database, and visualized instantly in a Power BI dashboard.
+An End-to-End Real-Time Credit Risk Engine designed to automate loan approval decisions using Machine Learning and visualize portfolio risk through a live dashboard.
 
-## 🚀 The Workflow
-The project follows a circular data lifecycle:
-1. **Frontend:** User submits loan details (Age, Amount, etc.) via a responsive Web UI.
-2. **API (Brain):** A Flask API inside a Docker container runs the data through a ML model (`model.pkl`).
-3. **Database:** The prediction and probability score are logged into a SQLite database.
-4. **Analytics:** Power BI connects to the database to provide real-time risk insights and KPI tracking.
+## 📌 Project Overview
+FinRisk360 bridges the gap between Data Science, Software Engineering, and Business Intelligence. It takes a trained Machine Learning model out of the Jupyter Notebook environment and deploys it into a fully containerized, full-stack application.
 
+Users can submit loan applications via a responsive web interface. The data is processed by a backend API, evaluated by an AI model, securely logged into a local database, and visualized in real-time to monitor business risk.
 
+## 🏗️ System Architecture
+The backend services are completely isolated within a **Docker Container Environment**, ensuring cross-platform consistency.
+
+1. **Web UI (Frontend):** Collects applicant risk factors (HTML/CSS/JS).
+2. **Flask API (Backend):** Orchestrates the pipeline, formatting JSON requests and handling database logging.
+3. **Machine Learning Engine:** A Scikit-Learn Random Forest model that predicts the probability of loan default.
+4. **SQLite Database:** Acts as the local relational storage to persist every application and AI decision.
+5. **Power BI Dashboard:** Connects to the database to visualize live portfolio risk metrics and approval rates.
+
+*(Insert your architecture diagram image here)*
 
 ## 🛠️ Tech Stack
-- **Languages:** Python (Flask), JavaScript, HTML5/CSS3
-- **DevOps:** Docker (Containerization & Volumes)
-- **Machine Learning:** Scikit-Learn (Classification Model)
-- **Database:** SQLite3
-- **Visualization:** Power BI Desktop
+* **Machine Learning:** Python, Pandas, Scikit-Learn (Random Forest Classifier)
+* **Backend API:** Flask, REST Architecture
+* **Frontend:** HTML5, CSS3, JavaScript
+* **Database:** SQLite3
+* **DevOps:** Docker
+* **Analytics:** Power BI
 
-## 📊 Dashboard Features
-- **Live Approval Rate:** Real-time breakdown of Good vs. Bad credit risks.
-- **AI Confidence Gauge:** Average probability score of the current portfolio.
-- **Portfolio Decomposition:** Drill-down analysis by Job, Housing, and Loan Purpose.
-- **Risk Profiling:** Scatter plots analyzing the relationship between Age and Loan Amount.
+## 🚀 Quick Start Guide
 
-## ⚙️ How to Run
-1. **Build the Docker Image:**
-   ```powershell
-   docker build -t finrisk-app .
+### Prerequisites
+Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running on your machine.
 
-2. **Run the Container:**
+### Installation & Execution
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YourUsername/FinRisk360.git](https://github.com/YourUsername/FinRisk360.git)
+   cd FinRisk360
+Build the Docker Image:
 
-PowerShell: 
-docker run -d -p 5000:5000 -v ${PWD}/data:/app/data --name finrisk-app finrisk-app
+Bash
+docker build -t finrisk-app .
+Run the Container:
 
-Open the App:
-Simply open index.html in your browser and submit an application.
-
-Developed by: Arihant Sanjay Ostwal
-
-LinkedIn: www.linkedin.com/in/arihant-ostwal2911
+Bash
+docker run -p 5000:5000 finrisk-app
