@@ -33,6 +33,7 @@ The project follows a circular data lifecycle:
 
 PowerShell: 
 docker run -d -p 5000:5000 -v ${PWD}/data:/app/data --name finrisk-app finrisk-app
+
 Open the App:
 Simply open index.html in your browser and submit an application.
 
