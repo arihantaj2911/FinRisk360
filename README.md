@@ -34,7 +34,7 @@ Make sure you have [Docker Desktop](https://www.docker.com/products/docker-deskt
 ### Installation & Execution
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YourUsername/FinRisk360.git](https://github.com/YourUsername/FinRisk360.git)
+   git clone [https://github.com/arihantaj2911/FinRisk360]
    cd FinRisk360
 Build the Docker Image:
 
