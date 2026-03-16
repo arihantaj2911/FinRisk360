@@ -39,4 +39,4 @@ Simply open index.html in your browser and submit an application.
 
 Developed by: Arihant Sanjay Ostwal
 
-LinkedIn: 
+LinkedIn: www.linkedin.com/in/arihant-ostwal2911
